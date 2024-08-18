@@ -1,0 +1,66 @@
+@font-face {
+    font-family:Gilroy;
+    src: url(Gilroy-SemiBold.ttf);
+}
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Gilroy;
+    height: 100vh;
+    margin: 0;
+    background-color: #000;
+}
+
+.calculator {
+    display: grid;
+    border: 1px solid wheat;
+    grid-template-rows: auto 1fr;
+    width: 350px;
+    background-color: #787070;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.display {
+    background-color: #030303;
+    color: #fff;
+    text-align: right;
+    padding: 20px;
+    font-size: 2rem;
+}
+
+#result {
+    min-height: 50px;
+}
+
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    padding: 20px;
+}
+
+.button {
+    background-color: #100a0a;
+    border: none;
+    border-radius: 50%;
+    color: #fff6f6;
+    font-size: 1.5rem;
+    padding: 20px;
+    text-align: center;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.button:active {
+    background-color: #555;
+}
+
+.button:nth-child(4n+4) {
+    background-color: #3e3737;
+}
+
+.button:nth-child(20) {
+    background-color: #ff1e00;
+}
